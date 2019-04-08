@@ -1,0 +1,6 @@
+<div #contentAdjustment style="width: 200px;">
+  <div *ngIf="width >= widthItems">
+    <app-auto-adjustment [(aWidth)]="item.width" [label]="item.label" *ngFor="let item of items"></app-auto-adjustment>  
+  </div>
+  
+</div>
